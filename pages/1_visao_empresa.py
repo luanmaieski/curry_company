@@ -29,7 +29,7 @@ def country_maps( df1 ):
                        location_info ['Delivery_location_longitude']], 
                        popup=location_info[['City', 'Road_traffic_density']]).add_to(map)
 
-    folium_static(map, width=1024, height=600)
+        folium_static(map, width=1024, height=600)
 
 def order_share_by_week( df1 ):
     df_aux01 = df1.loc[:, ["ID", "week_of_year"]].groupby("week_of_year").count().reset_index()
