@@ -159,10 +159,10 @@ st.sidebar.markdown("""___""")
                  
 date_slider = st.sidebar.slider(
     'Até qual valor?',
-    value=pd.datetime(2022, 4, 3),
-    min_value=pd.datetime(2022, 2, 11),
-    max_value=pd.datetime(2022, 4, 6),
-    format='DD=MM=YYYY')
+    value=pd.Timestamp(2022, 4, 3),
+    min_value=pd.Timestamp(2022, 2, 11),
+    max_value=pd.Timestamp(2022, 4, 6),
+    format='%d-%m-%Y')
 
 st.sidebar.markdown("""___""")
 
